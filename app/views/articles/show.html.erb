@@ -3,7 +3,7 @@
     <h4 class="center"><strong>Descrpition:</strong></h4>
     <hr>
     <%= simple_format(@article.description) %>
-    <div class="article_actions">
+    <div class="article-actions">
         <%= link_to 'Edit article', edit_article_path(@article), class: "btn btn-xs btn-primary active" %>
         <%= link_to 'Delete article', article_path(@article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger active" %>
         <%= link_to 'View all articles', articles_path, class: "btn btn-xs btn-success active" %>
